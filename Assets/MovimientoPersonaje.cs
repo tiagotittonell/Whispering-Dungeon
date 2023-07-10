@@ -1,0 +1,310 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.Windows;
+//using UnityEngine.Windows.Input;
+
+public class MovimientoPersonaje : MonoBehaviour
+{
+
+    [SerializeField] private float vida;
+    [SerializeField] private BarraDeVida barraVida;
+    private Rigidbody2D rb;
+
+    //Movimiento 
+
+    //private float inputX;
+
+    //private float inputY;
+
+    private Vector2 input;
+
+    private float movimientoHorizontal = 0f;
+
+    [SerializeField] private float velocidadDeMovimiento;
+
+    [Range(0, 0.3f)]
+    [SerializeField] private float suavizadoMovimiento;
+
+    private Vector3 velocidad = Vector3.zero;
+
+    private bool mirandoDerecha = true;
+
+    //SALTO
+    public float fuerzaSalto;
+
+    [SerializeField] private LayerMask queEsSuelo;
+
+    [SerializeField] private Transform controladorSuelo;
+
+    [SerializeField] private Vector3 dimensionCaja;
+
+
+    [SerializeField]
+    private bool enSuelo;
+
+    private bool salto = false;
+
+    //DASH
+
+    [SerializeField] private float velocidadDash;
+
+    [SerializeField] private float tiempoDash;
+
+    private bool puedeHacerDash = true;
+
+    private bool sePuedeVer = true;
+    [SerializeField] private TrailRenderer trailRender;
+
+
+
+    //DESLIZARSE PARED
+
+    [SerializeField] Transform controladorPared;
+    [SerializeField] private Vector3 dimensionCajaPared;
+    private bool enPared;
+    private bool deslizando;
+    [SerializeField] private float velocidadDeslizar;
+    [SerializeField] private float fuerzaSaltoParedX;
+    [SerializeField] private float fuerzaSaltoParedY;
+    [SerializeField] private float tiempoSaltoPared;
+
+    private bool saltandoPared;
+
+    //ANIMACION
+    private Animator anim;
+
+
+    //SUBIR ESCALERAS
+    [SerializeField] private float velocidadEscalar;
+
+    private BoxCollider2D boxCollider;
+
+    private float gravedadInicial;
+
+    private bool escalando;
+
+    // Start is called before the first frame update
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        gravedadInicial = rb.gravityScale;
+        barraVida.InicializarBarraDeVida(vida);
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        input.x = UnityEngine.Input.GetAxisRaw("Horizontal");
+        input.y = UnityEngine.Input.GetAxisRaw("Vertical");
+
+        movimientoHorizontal = input.x * velocidadDeMovimiento;
+        //anim.SetFloat("Horizontal", Mathf.Abs(movimientoHorizontal));
+
+        anim.SetFloat("VelocidadY", rb.velocity.y);
+        anim.SetFloat("VelocidadX", Mathf.Abs(rb.velocity.x));
+
+        if(Mathf.Abs(rb.velocity.y)> Mathf.Epsilon)
+        {
+            anim.SetFloat("VelocidadY", Mathf.Sign(rb.velocity.y));
+        }
+        else
+        {
+            anim.SetFloat("VelocidadY", 0);
+        }
+
+        
+
+
+        if (UnityEngine.Input.GetButtonDown("Jump"))
+        {
+            salto = true;
+
+        }
+
+        if (!enSuelo && enPared && input.x != 0)
+        {
+            deslizando = true;
+        }
+        else
+        {
+            deslizando = false;
+        }
+        if (enSuelo)
+        {
+            escalando = false;
+        }
+        anim.SetBool("Deslizando", deslizando);
+
+    }
+
+    private void FixedUpdate()
+    {
+        enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionCaja, 0f, queEsSuelo);
+        anim.SetBool("enSuelo", enSuelo);
+      
+
+        enPared = Physics2D.OverlapBox(controladorPared.position, dimensionCajaPared, 0f, queEsSuelo);
+        //Mover
+
+        if (sePuedeVer)
+        {
+            Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
+        }
+        
+        Escalar();
+        salto = false;
+
+        if (deslizando)
+        {
+            rb.velocity = new Vector2(rb.velocity.y, Mathf.Clamp(rb.velocity.y, -velocidadDeslizar, float.MaxValue));
+        }
+
+    }
+    private void Muerte()
+    {
+
+
+        Destroy(gameObject);
+    }
+
+    private void Mover(float mover, bool saltar)
+    {
+        if (!saltandoPared)
+        {
+            Vector3 velocidadObjetivo = new Vector2(mover, rb.velocity.y);
+
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo, ref velocidad, suavizadoMovimiento);
+
+
+        }
+       
+
+        if( mover> 0 && !mirandoDerecha)
+        {
+            //girar
+
+            Girar();
+        }
+        else if (mover <0 && mirandoDerecha)
+        {
+            Girar();
+        }
+
+        if(saltar && enSuelo && !deslizando)
+        {
+            Salto();
+        }
+        if(saltar && enPared && deslizando)
+        {
+            SaltoPared();
+        }
+
+        if(UnityEngine.Input.GetKeyDown(KeyCode.B)&& puedeHacerDash)
+        {
+           StartCoroutine( Dash());
+        }
+    }
+    private void Salto()
+    {
+        enSuelo = false;
+
+        rb.AddForce(new Vector2(0f, fuerzaSalto));
+
+    }
+
+    private void Escalar()
+    {
+        if ((input.y != 0 || escalando) && (boxCollider.IsTouchingLayers(LayerMask.GetMask("ESCALERAS"))))
+
+        {
+            Vector2 velocidadSubida = new Vector2(rb.velocity.x, input.y * velocidadEscalar);
+            rb.velocity = velocidadSubida;
+            rb.gravityScale = 0;
+            escalando = true;
+        }
+        else
+        {
+            rb.gravityScale = gravedadInicial;
+            escalando = false;
+        }
+        if (enSuelo)
+        {
+            escalando = false;
+        }
+        anim.SetBool("Escalar", escalando);
+
+    }
+    public void TomarDaño(float daño)
+    {
+        vida -= daño;
+
+        barraVida.CambiarVidaActual(vida);
+
+        if (vida <= 0)
+
+        {
+            Muerte();
+
+        }
+
+    }
+   
+    private void SaltoPared()
+    {
+        enPared = false;
+
+        rb.velocity = new Vector2(fuerzaSaltoParedX * -input.x, fuerzaSaltoParedY);
+        StartCoroutine(CambioSaltoPared());
+
+
+    }
+
+    IEnumerator CambioSaltoPared()
+    {
+        saltandoPared = true;
+        yield return new WaitForSeconds(tiempoSaltoPared);
+        saltandoPared = false;
+    }
+    private void Girar()
+    {
+        mirandoDerecha = !mirandoDerecha;
+
+        Vector3 escala = transform.localScale;
+
+        escala.x *= -1;
+
+        transform.localScale = escala;
+    }
+
+    private IEnumerator Dash()
+    {
+        sePuedeVer = false;
+        puedeHacerDash = false;
+        rb.gravityScale = 0;
+        rb.velocity = new Vector2(velocidadDash * transform.localScale.x,0);
+        anim.SetTrigger("Dash");
+        trailRender.emitting = true;
+
+        yield return new WaitForSeconds(tiempoDash);
+
+        sePuedeVer = true;
+        puedeHacerDash = true;
+        rb.gravityScale = gravedadInicial;
+        trailRender.emitting = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(controladorSuelo.position, dimensionCaja);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(controladorPared.position, dimensionCajaPared);
+    }
+
+}
