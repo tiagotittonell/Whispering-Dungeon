@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemigoPatrulla : MonoBehaviour
 {
-    [SerializeField] private float vida;
+    public float vida;
   
 
     private Animator animator;
