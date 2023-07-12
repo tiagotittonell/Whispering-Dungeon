@@ -8,7 +8,7 @@ public class JefeCaminra_Behaviour : StateMachineBehaviour
 
     private Rigidbody2D rb;
 
-    [SerializeField]  private float velocidadMovimiento;
+    [SerializeField]   private float velocidadMovimiento;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

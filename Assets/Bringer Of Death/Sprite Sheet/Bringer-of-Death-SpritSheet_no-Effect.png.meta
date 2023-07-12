@@ -333,12 +333,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 74
         y: 651
-        width: 140
-        height: 93
+        width: 66
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_1
       rect:
         serializedVersion: 2
-        x: 140
+        x: 213
         y: 651
-        width: 140
-        height: 93
+        width: 67
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,12 +375,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_2
       rect:
         serializedVersion: 2
-        x: 280
+        x: 353
         y: 651
-        width: 140
-        height: 93
+        width: 67
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_3
       rect:
         serializedVersion: 2
-        x: 420
+        x: 493
         y: 651
-        width: 140
-        height: 93
+        width: 67
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,12 +417,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_4
       rect:
         serializedVersion: 2
-        x: 560
+        x: 633
         y: 651
-        width: 140
-        height: 93
+        width: 67
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,12 +438,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_5
       rect:
         serializedVersion: 2
-        x: 700
+        x: 772
         y: 651
-        width: 140
-        height: 93
+        width: 61
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_6
       rect:
         serializedVersion: 2
-        x: 840
+        x: 912
         y: 651
-        width: 140
-        height: 93
+        width: 65
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_7
       rect:
         serializedVersion: 2
-        x: 980
+        x: 1048
         y: 651
-        width: 140
-        height: 93
+        width: 72
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,12 +501,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 78
         y: 558
-        width: 140
-        height: 93
+        width: 62
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,12 +522,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_9
       rect:
         serializedVersion: 2
-        x: 140
+        x: 214
         y: 558
-        width: 140
-        height: 93
+        width: 66
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -543,12 +543,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_10
       rect:
         serializedVersion: 2
-        x: 280
+        x: 352
         y: 558
-        width: 140
-        height: 93
+        width: 67
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_11
       rect:
         serializedVersion: 2
-        x: 420
+        x: 495
         y: 558
-        width: 140
-        height: 93
+        width: 65
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_12
       rect:
         serializedVersion: 2
-        x: 560
+        x: 630
         y: 558
-        width: 140
-        height: 93
+        width: 70
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,12 +606,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_13
       rect:
         serializedVersion: 2
-        x: 700
+        x: 775
         y: 558
-        width: 140
-        height: 93
+        width: 63
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -627,12 +627,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_14
       rect:
         serializedVersion: 2
-        x: 840
+        x: 908
         y: 558
-        width: 140
-        height: 93
+        width: 72
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -648,12 +648,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_15
       rect:
         serializedVersion: 2
-        x: 980
-        y: 558
-        width: 140
-        height: 93
+        x: 1050
+        y: 559
+        width: 70
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,12 +669,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_16
       rect:
         serializedVersion: 2
-        x: 0
+        x: 76
         y: 465
-        width: 140
-        height: 93
+        width: 64
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,12 +690,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_17
       rect:
         serializedVersion: 2
-        x: 140
+        x: 214
         y: 465
-        width: 140
-        height: 93
+        width: 66
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,12 +711,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_18
       rect:
         serializedVersion: 2
-        x: 280
+        x: 353
         y: 465
-        width: 140
-        height: 93
+        width: 67
+        height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,12 +732,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_19
       rect:
         serializedVersion: 2
-        x: 420
+        x: 488
         y: 465
-        width: 140
-        height: 93
+        width: 72
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,12 +753,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_20
       rect:
         serializedVersion: 2
-        x: 560
+        x: 590
         y: 465
-        width: 140
-        height: 93
+        width: 110
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,12 +774,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_21
       rect:
         serializedVersion: 2
-        x: 700
+        x: 736
         y: 465
-        width: 140
-        height: 93
+        width: 103
+        height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,12 +795,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_22
       rect:
         serializedVersion: 2
-        x: 840
-        y: 465
-        width: 140
-        height: 93
+        x: 888
+        y: 466
+        width: 85
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,12 +816,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_23
       rect:
         serializedVersion: 2
-        x: 980
+        x: 1034
         y: 465
-        width: 140
-        height: 93
+        width: 85
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,12 +837,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 372
-        width: 140
-        height: 93
+        x: 55
+        y: 371
+        width: 85
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -858,12 +858,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_25
       rect:
         serializedVersion: 2
-        x: 140
+        x: 209
         y: 372
-        width: 140
-        height: 93
+        width: 71
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -879,12 +879,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_26
       rect:
         serializedVersion: 2
-        x: 280
+        x: 339
         y: 372
-        width: 140
-        height: 93
+        width: 81
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,12 +900,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_27
       rect:
         serializedVersion: 2
-        x: 420
+        x: 489
         y: 372
-        width: 140
-        height: 93
+        width: 71
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -921,12 +921,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_28
       rect:
         serializedVersion: 2
-        x: 560
+        x: 633
         y: 372
-        width: 140
-        height: 93
+        width: 67
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -942,12 +942,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_29
       rect:
         serializedVersion: 2
-        x: 700
+        x: 766
         y: 372
-        width: 140
-        height: 93
+        width: 74
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -963,12 +963,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_30
       rect:
         serializedVersion: 2
-        x: 840
+        x: 917
         y: 372
-        width: 140
-        height: 93
+        width: 63
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -984,12 +984,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_31
       rect:
         serializedVersion: 2
-        x: 980
+        x: 1049
         y: 372
-        width: 140
-        height: 93
+        width: 71
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1005,12 +1005,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_32
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 279
-        width: 140
-        height: 93
+        width: 76
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1026,12 +1026,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_33
       rect:
         serializedVersion: 2
-        x: 140
+        x: 212
         y: 279
-        width: 140
-        height: 93
+        width: 68
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1047,12 +1047,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_34
       rect:
         serializedVersion: 2
-        x: 280
+        x: 352
         y: 279
-        width: 140
-        height: 93
+        width: 68
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1068,12 +1068,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_35
       rect:
         serializedVersion: 2
-        x: 420
+        x: 492
         y: 279
-        width: 140
-        height: 93
+        width: 68
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1089,12 +1089,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_36
       rect:
         serializedVersion: 2
-        x: 560
+        x: 641
         y: 279
-        width: 140
-        height: 93
+        width: 59
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1110,12 +1110,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_37
       rect:
         serializedVersion: 2
-        x: 700
+        x: 779
         y: 279
-        width: 140
-        height: 93
+        width: 58
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1131,12 +1131,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_38
       rect:
         serializedVersion: 2
-        x: 980
+        x: 1049
         y: 279
-        width: 140
-        height: 93
+        width: 71
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1152,12 +1152,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_39
       rect:
         serializedVersion: 2
-        x: 0
+        x: 72
         y: 186
-        width: 140
-        height: 93
+        width: 68
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1173,12 +1173,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_40
       rect:
         serializedVersion: 2
-        x: 140
+        x: 210
         y: 186
-        width: 140
-        height: 93
+        width: 70
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1194,12 +1194,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_41
       rect:
         serializedVersion: 2
-        x: 280
+        x: 346
         y: 186
-        width: 140
-        height: 93
+        width: 74
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1215,12 +1215,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_42
       rect:
         serializedVersion: 2
-        x: 420
-        y: 186
-        width: 140
-        height: 93
+        x: 483
+        y: 188
+        width: 78
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1236,12 +1236,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_43
       rect:
         serializedVersion: 2
-        x: 560
+        x: 629
         y: 186
-        width: 140
-        height: 93
+        width: 71
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1257,12 +1257,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_44
       rect:
         serializedVersion: 2
-        x: 700
-        y: 186
-        width: 140
-        height: 93
+        x: 768
+        y: 190
+        width: 74
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1278,12 +1278,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_45
       rect:
         serializedVersion: 2
-        x: 840
+        x: 911
         y: 186
-        width: 140
-        height: 93
+        width: 69
+        height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1299,12 +1299,12 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_no-Effect_46
       rect:
         serializedVersion: 2
-        x: 980
-        y: 186
-        width: 140
-        height: 93
+        x: 1048
+        y: 189
+        width: 72
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1321,11 +1321,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 93
+        y: 95
         width: 140
-        height: 93
+        height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1346,7 +1346,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1367,7 +1367,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1388,7 +1388,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1409,7 +1409,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1430,7 +1430,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1451,7 +1451,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1472,7 +1472,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1493,7 +1493,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1514,7 +1514,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1535,7 +1535,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1556,7 +1556,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1577,7 +1577,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1598,7 +1598,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1619,7 +1619,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1640,7 +1640,7 @@ TextureImporter:
         width: 140
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1687,24 +1687,24 @@ TextureImporter:
       Bringer-of-Death-SpritSheet_no-Effect_42: 5971977972953562940
       Bringer-of-Death-SpritSheet_no-Effect_41: -1552706059720980737
       Bringer-of-Death-SpritSheet_no-Effect_15: 7143291375066826113
-      Bringer-of-Death-SpritSheet_no-Effect_39: -7605932586306218444
-      Bringer-of-Death-SpritSheet_no-Effect_46: 1094804213907282072
-      Bringer-of-Death-SpritSheet_no-Effect_3: -5832765646890758737
-      Bringer-of-Death-SpritSheet_no-Effect_8: 5405395678726468614
-      Bringer-of-Death-SpritSheet_no-Effect_24: -5088622704207167661
-      Bringer-of-Death-SpritSheet_no-Effect_16: 899130107254062015
-      Bringer-of-Death-SpritSheet_no-Effect_11: -2963806683211420601
-      Bringer-of-Death-SpritSheet_no-Effect_55: -7816397596608372119
       Bringer-of-Death-SpritSheet_no-Effect_53: 7825478971551238011
+      Bringer-of-Death-SpritSheet_no-Effect_39: -7605932586306218444
+      Bringer-of-Death-SpritSheet_no-Effect_3: -5832765646890758737
+      Bringer-of-Death-SpritSheet_no-Effect_46: 1094804213907282072
+      Bringer-of-Death-SpritSheet_no-Effect_55: -7816397596608372119
+      Bringer-of-Death-SpritSheet_no-Effect_24: -5088622704207167661
+      Bringer-of-Death-SpritSheet_no-Effect_8: 5405395678726468614
+      Bringer-of-Death-SpritSheet_no-Effect_11: -2963806683211420601
+      Bringer-of-Death-SpritSheet_no-Effect_16: 899130107254062015
       Bringer-of-Death-SpritSheet_no-Effect_49: 7068232678376310141
       Bringer-of-Death-SpritSheet_no-Effect_25: 7230752440376131772
       Bringer-of-Death-SpritSheet_no-Effect_29: 716115853364893597
       Bringer-of-Death-SpritSheet_no-Effect_2: -4765902087534015984
-      Bringer-of-Death-SpritSheet_no-Effect_9: -5935658692155473707
-      Bringer-of-Death-SpritSheet_no-Effect_4: 1430492987850284986
-      Bringer-of-Death-SpritSheet_no-Effect_14: 8954457532367114730
       Bringer-of-Death-SpritSheet_no-Effect_10: 1794191405850463572
+      Bringer-of-Death-SpritSheet_no-Effect_4: 1430492987850284986
+      Bringer-of-Death-SpritSheet_no-Effect_9: -5935658692155473707
       Bringer-of-Death-SpritSheet_no-Effect_30: 755167890892547285
+      Bringer-of-Death-SpritSheet_no-Effect_14: 8954457532367114730
       Bringer-of-Death-SpritSheet_no-Effect_32: 2822720815099711002
       Bringer-of-Death-SpritSheet_no-Effect_20: 3146623566556835845
       Bringer-of-Death-SpritSheet_no-Effect_36: 756475373222144264
