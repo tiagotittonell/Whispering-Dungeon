@@ -26,95 +26,90 @@ public class Enemigo3 : MonoBehaviour
         ani = GetComponent<Animator>();
         target = GameObject.Find("PJ");
     }
-    void Update()
-    {
-        Comportamientos();
-    }
 
     public void Comportamientos()
     {
         if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando)
         {
             ani.SetBool("Correr", false);
-        cronometro += 1 * Time.deltaTime;
-        if (cronometro >= 4)
-        {
-            rutina = Random.Range(0, 2);
-            cronometro = 0;
-        }
-        switch (rutina)
-        {
-            case 0:
-                ani.SetBool("Caminar", false);
-                break;
-
-            case 1:
-                direccion = Random.Range(0, 2);
-                rutina++;
-                break;
-
-            case 2:
-
-                switch (direccion)
-                {
-                    case 0:
-                        transform.rotation = Quaternion.Euler(0, 0, 0);
-                        transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
-                        break;
-
-                    case 1:
-                        transform.rotation = Quaternion.Euler(0, 180, 0);
-                        transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
-                        break;
-                }
-                ani.SetBool("Caminar", true);
-                break;
-        }
-        
-    }
-            else
+            cronometro += 1 * Time.deltaTime;
+            if (cronometro >= 4)
             {
-                if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_ataque && !atacando)
-                {
-                    if (transform.position.x<target.transform.position.x)
+                rutina = Random.Range(0, 2);
+                cronometro = 0;
+            }
+            switch (rutina)
+            {
+                case 0:
+                    ani.SetBool("Caminar", false);
+                    break;
+
+                case 1:
+                    direccion = Random.Range(0, 2);
+                    rutina++;
+                    break;
+
+                case 2:
+
+                    switch (direccion)
                     {
-                        ani.SetBool("Caminar", false);
-                        ani.SetBool("Correr", true);
-                        transform.Translate(Vector3.right* speed_run * Time.deltaTime);
-                        transform.rotation = Quaternion.Euler(0, 0, 0);
-                        ani.SetBool("Atacar", false);
+                        case 0:
+                            transform.rotation = Quaternion.Euler(0, 0, 0);
+                            transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
+                            break;
+
+                        case 1:
+                            transform.rotation = Quaternion.Euler(0, 180, 0);
+                            transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
+                            break;
                     }
-                    else
-{
-                        ani.SetBool("Caminar", false);
-                        ani.SetBool("Correr", true);
-                        transform.Translate(Vector3.right * speed_run * Time.deltaTime);
-                        transform.rotation = Quaternion.Euler(0, 180, 0);
-                        ani.SetBool("Atacar", false);
-                    }
-                }
-                else
-{
-    if (!atacando)
-    {
-        if (transform.position.x < target.transform.position.x)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+                    ani.SetBool("Caminar", true);
+                    break;
+            }
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
-        ani.SetBool("Caminar", false);
-        ani.SetBool("Correr", false);
-    }
-}
+            if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_ataque && !atacando)
+            {
+                if (transform.position.x < target.transform.position.x)
+                {
+                    ani.SetBool("Caminar", false);
+                    ani.SetBool("Correr", true);
+                    transform.Translate(Vector3.right * speed_run * Time.deltaTime);
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                    ani.SetBool("Ataque", false);
+                }
+                else
+                {
+                    ani.SetBool("Caminar", false);
+                    ani.SetBool("Correr", true);
+                    transform.Translate(Vector3.right * speed_run * Time.deltaTime);
+                    transform.rotation = Quaternion.Euler(0, 180, 0);
+                    ani.SetBool("Ataque", false);
+                }
+            }
+            else
+            {
+                if (!atacando)
+                {
+                    if (transform.position.x < target.transform.position.x)
+                    {
+                        transform.rotation = Quaternion.Euler(0, 0, 0);
+                    }
+                    else
+                    {
+                        transform.rotation = Quaternion.Euler(0, 180, 0);
+                    }
+                    ani.SetBool("Caminar", false);
+                    ani.SetBool("Correr", false);
+                }
             }
         }
+    }
 
     public void Final_Ani()
     {
-        ani.SetBool("Atacar", false);
+        ani.SetBool("Ataque", false);
         atacando = false;
         rango.GetComponent<BoxCollider2D>().enabled = true;
     }
@@ -128,6 +123,9 @@ public class Enemigo3 : MonoBehaviour
     }
 
     // Update is called once per frame
-
+    void Update()
+    {
+        Comportamientos();
+    }
 }
 

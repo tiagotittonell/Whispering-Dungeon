@@ -8,7 +8,8 @@ using UnityEngine.Windows;
 
 public class MovimientoPersonaje : MonoBehaviour
 {
-
+   
+   
     [SerializeField] private float vida;
     [SerializeField] private BarraDeVida barraVida;
     private Rigidbody2D rb;
@@ -18,6 +19,10 @@ public class MovimientoPersonaje : MonoBehaviour
     //private float inputX;
 
     //private float inputY;
+
+    ////[SerializeField] private bool damage_;
+    ////[SerializeField] private int empuje;
+
 
     private Vector2 input;
 
@@ -90,6 +95,7 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private void Start()
     {
+        //jugador = MovimientoPersonaje();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -141,6 +147,7 @@ public class MovimientoPersonaje : MonoBehaviour
         }
         anim.SetBool("Deslizando", deslizando);
 
+
     }
 
     private void FixedUpdate()
@@ -166,6 +173,15 @@ public class MovimientoPersonaje : MonoBehaviour
         }
 
     }
+
+    //public void Damage()
+    //{
+    //    if (damage_)
+    //    {
+    //        transform.Translate(Vector3.right * empuje * Time.deltaTime, Space.World);
+    //        MovimientoPersonaje.
+    //    }
+    //}
     private void Muerte()
     {
 

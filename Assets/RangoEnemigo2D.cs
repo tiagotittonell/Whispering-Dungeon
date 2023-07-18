@@ -9,11 +9,11 @@ public class RangoEnemigo2D : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.CompareTag("Player"))
+        if (coll.CompareTag("PJ"))
         {
            ani.SetBool("Caminar", false);
            ani.SetBool("Correr", false);
-           ani.SetBool("Atacar", true);
+           ani.SetBool("Ataque", true);
            enemigo.atacando = true;
            GetComponent<BoxCollider2D>().enabled = false;            
         }
