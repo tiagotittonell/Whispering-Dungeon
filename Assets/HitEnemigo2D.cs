@@ -9,11 +9,11 @@ public class HitEnemigo2D : MonoBehaviour
 
   
 
-    void OnTriggerEnter2D(Collider2D coll)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (coll.CompareTag("PJ"))
+        if (other.gameObject.CompareTag("PJ"))
         {
-
+            other.gameObject.GetComponent<VidaPersonaje>().TomarDaño(20, other.GetContact(0).normal);
             //if (coll.GetComponent<MovimientoPersonaje>().HP_Min > 0 && coll.GetComponent<MovimientoPersonaje>().damage_ == false)
             //{
             //    coll.GetComponent<MovimientoPersonaje>().ani.SetTrigger("damage");

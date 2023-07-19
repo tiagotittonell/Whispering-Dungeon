@@ -8,21 +8,20 @@ using UnityEngine.Windows;
 
 public class MovimientoPersonaje : MonoBehaviour
 {
-   
-   
-    [SerializeField] private float vida;
-    [SerializeField] private BarraDeVida barraVida;
+
+  
     private Rigidbody2D rb;
 
-    //Movimiento 
+    //EFECTO DAÑO
+   
 
-    //private float inputX;
+    [SerializeField] private Vector2 velocidadRebote;
 
-    //private float inputY;
 
-    ////[SerializeField] private bool damage_;
-    ////[SerializeField] private int empuje;
+    [SerializeField] private bool damage_;
+    [SerializeField] private int empuje;
 
+    //MOVIMIENTO
 
     private Vector2 input;
 
@@ -60,7 +59,7 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private bool puedeHacerDash = true;
 
-    private bool sePuedeVer = true;
+    public bool sePuedeMover = true;
     [SerializeField] private TrailRenderer trailRender;
 
 
@@ -100,7 +99,7 @@ public class MovimientoPersonaje : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         gravedadInicial = rb.gravityScale;
-        barraVida.InicializarBarraDeVida(vida);
+       
     }
 
     // Update is called once per frame
@@ -159,7 +158,7 @@ public class MovimientoPersonaje : MonoBehaviour
         enPared = Physics2D.OverlapBox(controladorPared.position, dimensionCajaPared, 0f, queEsSuelo);
         //Mover
 
-        if (sePuedeVer)
+        if (sePuedeMover)
         {
             Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
         }
@@ -174,20 +173,16 @@ public class MovimientoPersonaje : MonoBehaviour
 
     }
 
-    //public void Damage()
-    //{
-    //    if (damage_)
-    //    {
-    //        transform.Translate(Vector3.right * empuje * Time.deltaTime, Space.World);
-    //        MovimientoPersonaje.
-    //    }
-    //}
-    private void Muerte()
+    public void Damage()
     {
+        if (damage_)
+        {
+            transform.Translate(Vector3.right * empuje * Time.deltaTime, Space.World);
 
-
-        Destroy(gameObject);
+            
+        }
     }
+   
 
     private void Mover(float mover, bool saltar)
     {
@@ -256,20 +251,11 @@ public class MovimientoPersonaje : MonoBehaviour
         anim.SetBool("Escalar", escalando);
 
     }
-    public void TomarDaño(float daño)
+    public void Rebote(Vector2 puntoGolpe)
     {
-        vida -= daño;
-
-        barraVida.CambiarVidaActual(vida);
-
-        if (vida <= 0)
-
-        {
-            Muerte();
-
-        }
-
+        rb.velocity = new Vector2(-velocidadRebote.x * puntoGolpe.x, velocidadRebote.y);
     }
+   
    
     private void SaltoPared()
     {
@@ -300,7 +286,7 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        sePuedeVer = false;
+        sePuedeMover = false;
         puedeHacerDash = false;
         rb.gravityScale = 0;
         rb.velocity = new Vector2(velocidadDash * transform.localScale.x,0);
@@ -309,7 +295,7 @@ public class MovimientoPersonaje : MonoBehaviour
 
         yield return new WaitForSeconds(tiempoDash);
 
-        sePuedeVer = true;
+        sePuedeMover = true;
         puedeHacerDash = true;
         rb.gravityScale = gravedadInicial;
         trailRender.emitting = false;

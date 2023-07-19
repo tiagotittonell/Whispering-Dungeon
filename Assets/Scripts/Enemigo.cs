@@ -76,7 +76,7 @@ public class Enemigo : MonoBehaviour
         {
             if (colision.CompareTag("Player"))
             {
-                colision.GetComponent<MovimientoPersonaje>().TomarDaño(dañoAtaque);
+                colision.GetComponent<VidaPersonaje>().TomarDaño(dañoAtaque);
             }
         }
     }
