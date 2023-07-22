@@ -13,7 +13,8 @@ public class HitEnemigo2D : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PJ"))
         {
-            other.gameObject.GetComponent<VidaPersonaje>().TomarDaño(20, other.GetContact(0).normal);
+            other.gameObject.GetComponent<VidaPersonaje>().TomarDaño(10, other.GetContact(0).normal);
+            other.gameObject.GetComponent<VidaPersonaje>().TomarDañoBarra(10);
             //if (coll.GetComponent<MovimientoPersonaje>().HP_Min > 0 && coll.GetComponent<MovimientoPersonaje>().damage_ == false)
             //{
             //    coll.GetComponent<MovimientoPersonaje>().ani.SetTrigger("damage");

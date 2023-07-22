@@ -30,7 +30,7 @@ public class Enemigo : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         barraVida.InicializarBarraDeVida(vida);
-        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        jugador = GameObject.FindGameObjectWithTag("PJ").GetComponent<Transform>();
     }
     private void Update()
     {
@@ -74,7 +74,7 @@ public class Enemigo : MonoBehaviour
 
         foreach (Collider2D colision in objetos)
         {
-            if (colision.CompareTag("Player"))
+            if (colision.CompareTag("PJ"))
             {
                 colision.GetComponent<VidaPersonaje>().TomarDaño(dañoAtaque);
             }

@@ -1718,7 +1718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db65f45a8fa97c949992200628736f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadRebote: {x: 0, y: 0}
+  velocidadRebote: {x: 10, y: 10}
   damage_: 0
   empuje: 0
   velocidadDeMovimiento: 400
@@ -1778,8 +1778,8 @@ MonoBehaviour:
   controladorGolpe: {fileID: 944969972}
   radioGolpe: 1
   "da\xF1oGolpe": 25
-  tiempoEntreAtaques: 0
-  tiempoSiguienteAtaque: 0
+  tiempoEntreAtaques: 0.5
+  tiempoSiguienteAtaque: 0.5
 --- !u!70 &815312959
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1858,6 +1858,7 @@ MonoBehaviour:
   vida: 100
   barraVida: {fileID: 646912080}
   tiempoPerdidaControl: 1
+  vidaMaxima: 100
 --- !u!1 &823146789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4586,14 +4587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49cb8f122ff546d4abdcf489b4ed8140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
-  animator: {fileID: 0}
-  rb: {fileID: 1986614768}
-  jugador: {fileID: 815312953}
-  mirandoDerecha: 1
-  controladorAtaque: {fileID: 164982883}
-  radioAtaque: 1.2
-  "da\xF1oAtaque": 20
 --- !u!1 &2049333040
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,10 +10,12 @@ public class VidaPersonaje : MonoBehaviour
     private MovimientoPersonaje movimientoJugador;
     [SerializeField] private float tiempoPerdidaControl;
     private Animator animator;
+    [SerializeField] private float vidaMaxima;
 
 
     private void Start()
     {
+        vida = vidaMaxima;
         barraVida.InicializarBarraDeVida(vida);
         movimientoJugador = GetComponent<MovimientoPersonaje>();
         animator = GetComponent<Animator>();
@@ -22,13 +24,19 @@ public class VidaPersonaje : MonoBehaviour
     {
         vida -= daño;
 
+      
+
+      
+
+    }
+    public void TomarDañoBarra(float Daño)
+    {
+        vida -= Daño;
+
         barraVida.CambiarVidaActual(vida);
-
         if (vida <= 0)
-
         {
-           Muerte();
-
+            Muerte();
         }
 
     }

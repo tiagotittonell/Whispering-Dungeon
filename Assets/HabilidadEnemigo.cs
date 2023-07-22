@@ -24,7 +24,7 @@ public class HabilidadEnemigo : MonoBehaviour
         Collider2D[] objetos = Physics2D.OverlapBoxAll(posicionCaja.position, dimensionCaja, 0f);
         foreach (Collider2D colisiones in objetos)
         {
-            if (colisiones.CompareTag("Player"))
+            if (colisiones.CompareTag("PJ"))
             {
                 colisiones.GetComponent<VidaPersonaje>().TomarDaño(daño);
             }
