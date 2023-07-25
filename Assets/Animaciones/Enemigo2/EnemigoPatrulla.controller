@@ -84,13 +84,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: DistanciaJugador
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -198,13 +198,13 @@ AnimatorStateMachine:
     m_Position: {x: -40, y: 330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7798805661088311620}
-    m_Position: {x: 260, y: 290, z: 0}
+    m_Position: {x: 250, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6071811303424656066}
     m_Position: {x: 394.1327, y: 4.1199036, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1265401296073986162}
-    m_Position: {x: 510, y: 220, z: 0}
+    m_Position: {x: 510, y: 230, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 149177311162336589}
@@ -255,7 +255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239c4e344a73719499794a0602f1e7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 5
 --- !u!1102 &7798805661088311620
 AnimatorState:
   serializedVersion: 6
