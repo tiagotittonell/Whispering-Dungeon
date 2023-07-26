@@ -883,7 +883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &615473913
 Animator:
   serializedVersion: 4
@@ -1016,6 +1016,7 @@ MonoBehaviour:
   atacando: 0
   rango_vision: 8
   rango_ataque: 2
+  tiempo_entre_ataques: 0.5
   rango: {fileID: 796638668}
   Hit: {fileID: 492989582}
 --- !u!70 &615473919
@@ -1031,8 +1032,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18442345, y: -0.17536199}
-  m_Size: {x: 0.11477277, y: 0.5808247}
+  m_Offset: {x: -0.1875702, y: -0.16413845}
+  m_Size: {x: 0.10847926, y: 0.5583777}
   m_Direction: 0
 --- !u!1 &640669832
 GameObject:
@@ -3044,7 +3045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &1133865137
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3193,6 +3194,7 @@ MonoBehaviour:
   atacando: 0
   rango_vision: 5
   rango_ataque: 2
+  tiempo_entre_ataques: 0
   rango: {fileID: 2020491442}
   Hit: {fileID: 1605986476}
 --- !u!1 &1281075228

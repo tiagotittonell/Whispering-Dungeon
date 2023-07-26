@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
 using UnityEngine;
 
-public class Enemigo3 : MonoBehaviour
+public class COPIAENEMIGOSCRIPT : MonoBehaviour
 {
     public int rutina;
     public float cronometro;
@@ -16,10 +15,9 @@ public class Enemigo3 : MonoBehaviour
 
     public float rango_vision;
     public float rango_ataque;
-    public float tiempo_entre_ataques;
-    private bool puedeAtacar = true; // Controla si el enemigo puede atacar nuevamente
     public GameObject rango;
     public GameObject Hit;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +31,7 @@ public class Enemigo3 : MonoBehaviour
         if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando)
         {
             ani.SetBool("Correr", false);
-            cronometro += Time.deltaTime;
+            cronometro += 1 * Time.deltaTime;
             if (cronometro >= 4)
             {
                 rutina = Random.Range(0, 2);
@@ -91,13 +89,6 @@ public class Enemigo3 : MonoBehaviour
             }
             else
             {
-                if (!atacando && puedeAtacar)
-                {
-                    atacando = true;
-                    puedeAtacar = false;
-                    Invoke("RealizarAtaque", 0.5f);
-                    Invoke("ResetearPuedeAtacar", tiempo_entre_ataques); // Restablecer el valor de puedeAtacar después del tiempo de enfriamiento
-                }
                 if (!atacando)
                 {
                     if (transform.position.x < target.transform.position.x)
@@ -115,41 +106,19 @@ public class Enemigo3 : MonoBehaviour
         }
     }
 
-    public void RealizarAtaque()
-    {
-        // Aquí puedes poner el código para realizar el ataque
-        ani.SetBool("Ataque", true);
-      
-        rango.GetComponent<BoxCollider2D>().enabled = false;
-        Invoke("Final_Ani", 0.5f);
-    }
-
     public void Final_Ani()
     {
         ani.SetBool("Ataque", false);
         atacando = false;
         rango.GetComponent<BoxCollider2D>().enabled = true;
     }
-
     public void ColliderWeaponTrue()
     {
         Hit.GetComponent<BoxCollider2D>().enabled = true;
     }
-
     public void ColliderWeaponFalse()
     {
         Hit.GetComponent<BoxCollider2D>().enabled = false;
-    }
-
-    private void ResetearPuedeAtacar()
-    {
-        puedeAtacar = true;
-    }
-
-    // Método para detener el ataque
-    public void DetenerAtaque()
-    {
-        atacando = false;
     }
 
     // Update is called once per frame
@@ -158,4 +127,3 @@ public class Enemigo3 : MonoBehaviour
         Comportamientos();
     }
 }
-
