@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 301003737}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "ControladorP\xE1red"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 492989585}
   - component: {fileID: 492989584}
   - component: {fileID: 492989583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffebf2d72f6acc44b571543d00cdad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "Da\xF1o": 25
+  "Da\xF1o": 10
 --- !u!61 &492989584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -446,7 +446,7 @@ BoxCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0023768395, y: 0.005620308}
@@ -877,7 +877,7 @@ GameObject:
   - component: {fileID: 615473913}
   - component: {fileID: 615473918}
   - component: {fileID: 615473919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemigo2
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -1016,7 +1016,6 @@ MonoBehaviour:
   atacando: 0
   rango_vision: 8
   rango_ataque: 2
-  tiempo_entre_ataques: 0.5
   rango: {fileID: 796638668}
   Hit: {fileID: 492989582}
 --- !u!70 &615473919
@@ -1331,7 +1330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 771629500}
   - component: {fileID: 771629501}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1519,7 +1518,7 @@ GameObject:
   - component: {fileID: 796638669}
   - component: {fileID: 796638670}
   - component: {fileID: 796638671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RangoDeVision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1598,7 +1597,7 @@ GameObject:
   - component: {fileID: 815312960}
   - component: {fileID: 815312961}
   - component: {fileID: 815312962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PJ
   m_TagString: PJ
   m_Icon: {fileID: 0}
@@ -2013,7 +2012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 944969972}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ControladorAtaque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3194,7 +3193,6 @@ MonoBehaviour:
   atacando: 0
   rango_vision: 5
   rango_ataque: 2
-  tiempo_entre_ataques: 0
   rango: {fileID: 2020491442}
   Hit: {fileID: 1605986476}
 --- !u!1 &1281075228
@@ -4715,7 +4713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049333041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ControladorSuelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
