@@ -150,12 +150,12 @@ TextureImporter:
       name: Jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 74
+        y: 77
+        width: 42
+        height: 55
+      alignment: 9
+      pivot: {x: 0.6439153, y: 0.48707068}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Jump_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 275
+        y: 78
+        width: 47
+        height: 53
+      alignment: 9
+      pivot: {x: 0.54538935, y: 0.4865828}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
