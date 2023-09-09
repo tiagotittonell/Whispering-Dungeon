@@ -18,10 +18,15 @@ public class COPIAENEMIGOSCRIPT : MonoBehaviour
     public GameObject rango;
     public GameObject Hit;
 
+    public Rigidbody2D rb;
+
+
+    [SerializeField] private float vida;
 
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         target = GameObject.Find("PJ");
     }
@@ -125,6 +130,27 @@ public class COPIAENEMIGOSCRIPT : MonoBehaviour
     void Update()
     {
         Comportamientos();
+       
+
+    }
+    public void TomarDaño(float daño)
+    {
+        vida -= daño;
+
+        //barraVida.CambiarVidaActual(vida);
+
+        if (vida <= 0)
+
+        {
+            ani.SetTrigger("Muerte");
+            Muerte();
+
+        }
+
+    }
+    public void Muerte()
+    {
+        Destroy(gameObject);
     }
     //public int rutina;
     //public float cronometro;

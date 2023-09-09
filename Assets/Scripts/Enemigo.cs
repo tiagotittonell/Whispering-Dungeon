@@ -29,7 +29,7 @@ public class Enemigo : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        barraVida.InicializarBarraDeVida(vida);
+        //barraVida.InicializarBarraDeVida(vida);
         jugador = GameObject.FindGameObjectWithTag("PJ").GetComponent<Transform>();
     }
     private void Update()
@@ -42,7 +42,7 @@ public class Enemigo : MonoBehaviour
     {
         vida -= daño;
 
-        barraVida.CambiarVidaActual(vida);
+        //barraVida.CambiarVidaActual(vida);
 
         if (vida <= 0)
 

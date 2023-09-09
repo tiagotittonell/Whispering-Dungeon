@@ -49,8 +49,9 @@ public class ControladorPersonaje : MonoBehaviour
         foreach(Collider2D colisionador in objetos)
         {
             if (colisionador.CompareTag("Enemigo"))
-            {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+            {//{
+            //    colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+                colisionador.transform.GetComponent<COPIAENEMIGOSCRIPT>().TomarDaño(dañoGolpe);
             }
         }
     }

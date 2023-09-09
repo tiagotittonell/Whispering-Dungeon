@@ -518,8 +518,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360, y: -13}
-  m_SizeDelta: {x: 331.4567, y: 60.195404}
+  m_AnchoredPosition: {x: 360, y: -58.213104}
+  m_SizeDelta: {x: 17.7907, y: 14.9823}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &382075494
 MonoBehaviour:
@@ -864,7 +864,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.3685913, y: 0.7371979}
   m_SizeDelta: {x: -13.2682, y: -14.7425}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1387,6 +1387,8 @@ MonoBehaviour:
   rango_ataque: 2
   rango: {fileID: 796638668}
   Hit: {fileID: 492989582}
+  rb: {fileID: 0}
+  vida: 0
 --- !u!1 &640669832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,9 +2047,9 @@ MonoBehaviour:
   velocidadRebote: {x: 10, y: 10}
   damage_: 0
   empuje: 0
-  velocidadDeMovimiento: 300
+  velocidadDeMovimiento: 350
   suavizadoMovimiento: 0
-  fuerzaSalto: 500
+  fuerzaSalto: 520
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 8
@@ -2213,7 +2215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &823146790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3603,7 +3605,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.3685913, y: 0.7371979}
   m_SizeDelta: {x: -13.2682, y: -14.7425}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3661,7 +3663,7 @@ GameObject:
   - component: {fileID: 1133865142}
   m_Layer: 0
   m_Name: Enemigo3
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3816,6 +3818,8 @@ MonoBehaviour:
   rango_ataque: 4
   rango: {fileID: 2020491442}
   Hit: {fileID: 1605986476}
+  rb: {fileID: 0}
+  vida: 100
 --- !u!1 &1234610171
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,8 +4333,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 22.8508, y: 14.742523}
+  m_AnchoredPosition: {x: 88.187, y: 5.69}
+  m_SizeDelta: {x: 301.18, y: 46.398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384227820
 MonoBehaviour:
@@ -4405,8 +4409,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.7, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 112, y: 2.0689}
+  m_SizeDelta: {x: 206.2072, y: 54.1381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423319859
 MonoBehaviour:
@@ -4491,7 +4495,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 50.870453, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.17831421, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4561,7 +4565,7 @@ BoxCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.290768, y: 0.043195575}
