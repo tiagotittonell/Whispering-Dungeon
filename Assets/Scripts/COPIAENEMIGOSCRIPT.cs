@@ -143,7 +143,9 @@ public class COPIAENEMIGOSCRIPT : MonoBehaviour
 
         {
             ani.SetTrigger("Muerte");
-            Muerte();
+            //StartCoroutine(TiempoMuerte());
+            //Destroy(gameObject);
+            //Muerte();
 
         }
 
@@ -152,6 +154,10 @@ public class COPIAENEMIGOSCRIPT : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    //IEnumerator TiempoMuerte()
+    //{
+    //    yield return new WaitForSeconds(1);
+    //}
     //public int rutina;
     //public float cronometro;
     //public Animator ani;

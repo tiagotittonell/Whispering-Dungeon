@@ -49,6 +49,8 @@ public class Enemigo : MonoBehaviour
         {
             animator.SetTrigger("Muerte");
 
+            //Destroy(gameObject);
+
         }
 
     }
