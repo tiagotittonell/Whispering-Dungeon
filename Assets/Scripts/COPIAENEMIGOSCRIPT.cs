@@ -139,6 +139,7 @@ public class COPIAENEMIGOSCRIPT : MonoBehaviour
 
         //barraVida.CambiarVidaActual(vida);
 
+        ani.SetTrigger("Daño");
         if (vida <= 0)
 
         {
