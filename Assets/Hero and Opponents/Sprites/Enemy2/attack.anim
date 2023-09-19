@@ -85,14 +85,21 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.43333334
-    functionName: RealizarAtaque
+    functionName: ColliderWeaponTrue
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.73333335
+    functionName: ColliderWeaponFalse
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.8333333
-    functionName: FinalizarAtaque
+    functionName: Final_Ani
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
