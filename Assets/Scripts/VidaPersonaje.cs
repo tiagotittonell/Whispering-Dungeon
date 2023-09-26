@@ -40,7 +40,7 @@ public class VidaPersonaje : MonoBehaviour
         }
 
     }
-    public void TomarDaño(float daño, Vector2 posicion)
+    public void TomarDaños(float daño, Vector2 posicion)
     {
         vida -= daño;
         animator.SetTrigger("Golpe");
