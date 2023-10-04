@@ -36,7 +36,9 @@ public class VidaPersonaje : MonoBehaviour
         barraVida.CambiarVidaActual(vida);
         if (vida <= 0)
         {
-            Muerte();
+            movimientoJugador.sePuedeMover = false;
+            animator.SetTrigger("Muerte");
+            //Muerte();
         }
 
     }
