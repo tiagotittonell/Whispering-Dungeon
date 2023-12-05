@@ -9,11 +9,11 @@ using UnityEngine.Windows;
 public class MovimientoPersonaje : MonoBehaviour
 {
 
-  
+
     private Rigidbody2D rb;
 
     //EFECTO DAÑO
-   
+
 
     [SerializeField] private Vector2 velocidadRebote;
 
@@ -99,7 +99,7 @@ public class MovimientoPersonaje : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         gravedadInicial = rb.gravityScale;
-       
+
     }
 
     // Update is called once per frame
@@ -114,7 +114,7 @@ public class MovimientoPersonaje : MonoBehaviour
         anim.SetFloat("VelocidadY", rb.velocity.y);
         anim.SetFloat("VelocidadX", Mathf.Abs(rb.velocity.x));
 
-        if(Mathf.Abs(rb.velocity.y)> Mathf.Epsilon)
+        if (Mathf.Abs(rb.velocity.y) > Mathf.Epsilon)
         {
             anim.SetFloat("VelocidadY", Mathf.Sign(rb.velocity.y));
         }
@@ -123,7 +123,7 @@ public class MovimientoPersonaje : MonoBehaviour
             anim.SetFloat("VelocidadY", 0);
         }
 
-        
+
 
 
         if (UnityEngine.Input.GetButtonDown("Jump"))
@@ -153,7 +153,7 @@ public class MovimientoPersonaje : MonoBehaviour
     {
         enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionCaja, 0f, queEsSuelo);
         anim.SetBool("enSuelo", enSuelo);
-      
+
 
         enPared = Physics2D.OverlapBox(controladorPared.position, dimensionCajaPared, 0f, queEsSuelo);
         //Mover
@@ -162,7 +162,7 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
         }
-        
+
         Escalar();
         salto = false;
 
@@ -179,10 +179,10 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             transform.Translate(Vector3.right * empuje * Time.deltaTime, Space.World);
 
-            
+
         }
     }
-   
+
 
     private void Mover(float mover, bool saltar)
     {
@@ -194,31 +194,31 @@ public class MovimientoPersonaje : MonoBehaviour
 
 
         }
-       
 
-        if( mover> 0 && !mirandoDerecha)
+
+        if (mover > 0 && !mirandoDerecha)
         {
             //girar
 
             Girar();
         }
-        else if (mover <0 && mirandoDerecha)
+        else if (mover < 0 && mirandoDerecha)
         {
             Girar();
         }
 
-        if(saltar && enSuelo && !deslizando)
+        if (saltar && enSuelo && !deslizando)
         {
             Salto();
         }
-        if(saltar && enPared && deslizando)
+        if (saltar && enPared && deslizando)
         {
             SaltoPared();
         }
 
-        if(UnityEngine.Input.GetKeyDown(KeyCode.B)&& puedeHacerDash)
+        if (UnityEngine.Input.GetKeyDown(KeyCode.B) && puedeHacerDash)
         {
-           StartCoroutine( Dash());
+            StartCoroutine(Dash());
         }
     }
     private void Salto()
@@ -255,8 +255,8 @@ public class MovimientoPersonaje : MonoBehaviour
     {
         rb.velocity = new Vector2(-velocidadRebote.x * puntoGolpe.x, velocidadRebote.y);
     }
-   
-   
+
+
     private void SaltoPared()
     {
         enPared = false;
@@ -289,7 +289,7 @@ public class MovimientoPersonaje : MonoBehaviour
         sePuedeMover = false;
         puedeHacerDash = false;
         rb.gravityScale = 0;
-        rb.velocity = new Vector2(velocidadDash * transform.localScale.x,0);
+        rb.velocity = new Vector2(velocidadDash * transform.localScale.x, 0);
         anim.SetTrigger("Dash");
         trailRender.emitting = true;
 

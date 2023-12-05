@@ -15,7 +15,7 @@ public class HabilidadEnemigo : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, tiempoVida);
-        
+
     }
 
 

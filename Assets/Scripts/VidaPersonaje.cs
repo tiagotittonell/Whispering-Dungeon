@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class VidaPersonaje : MonoBehaviour
 {
+
     [SerializeField] private float vida;
     [SerializeField] private BarraDeVida barraVida;
     private MovimientoPersonaje movimientoJugador;
@@ -24,9 +25,9 @@ public class VidaPersonaje : MonoBehaviour
     {
         vida -= daño;
 
-      
 
-      
+
+
 
     }
     public void TomarDañoBarra(float Daño)
