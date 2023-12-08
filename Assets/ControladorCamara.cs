@@ -6,15 +6,12 @@ using Cinemachine;
 
 public class ControladorCamara : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Camera camaraPrincipal;
+    public Camera camaraSecundaria;
+
     void Start()
     {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        camaraSecundaria.depth = camaraPrincipal.depth + 1;
     }
 }
