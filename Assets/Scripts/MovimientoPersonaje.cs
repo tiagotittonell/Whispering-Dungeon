@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Windows;
-//using UnityEngine.Windows.Input;
+
 
 public class MovimientoPersonaje : MonoBehaviour
 {
@@ -308,5 +308,5 @@ public class MovimientoPersonaje : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(controladorPared.position, dimensionCajaPared);
     }
-
 }
+
