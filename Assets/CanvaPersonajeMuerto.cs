@@ -5,66 +5,116 @@ using UnityEngine;
 
 public class CanvaPersonajeMuerto : MonoBehaviour
 {
-    public List<string> historias;
-    public List<TextMeshProUGUI> textMeshes;
+    public TextMeshProUGUI[] interactTexts; // Asigna tus objetos TextMeshPro al inspector
+    public KeyCode interactKey = KeyCode.E;
 
-    public TextMeshProUGUI textoInteraccion;
-    private bool mostrarTexto = false;
-    private int indiceActual = 0;
+    private bool isInRange = false;
+    private int currentTextIndex = 0;
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("PJ"))
+        {
+            isInRange = true;
+            UpdateTextVisibility();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("PJ"))
+        {
+            isInRange = false;
+            interactTexts[currentTextIndex].gameObject.SetActive(false);
+        }
+    }
 
     void Update()
     {
-        if (mostrarTexto && Input.GetKeyDown(KeyCode.E))
+        if (isInRange && Input.GetKeyDown(interactKey))
         {
-            MostrarSiguienteTexto();
+            ToggleTextMeshVisibility();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void ToggleTextMeshVisibility()
     {
-        if (other.CompareTag("PJ"))
-        {
-            Debug.Log("Player cerca de la palanca");
-            mostrarTexto = true;
-            textoInteraccion.gameObject.SetActive(true);
-            // Mostrar el primer texto al entrar en la zona
-            MostrarSiguienteTexto();
-        }
+        interactTexts[currentTextIndex].gameObject.SetActive(false);
+
+        // Cambia al siguiente TextMeshPro
+        currentTextIndex = (currentTextIndex + 1) % interactTexts.Length;
+
+        UpdateTextVisibility();
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void UpdateTextVisibility()
     {
-        if (other.CompareTag("PJ"))
+        for (int i = 0; i < interactTexts.Length; i++)
         {
-            mostrarTexto = false;
-            textoInteraccion.gameObject.SetActive(false);
+            interactTexts[i].gameObject.SetActive(i == currentTextIndex);
         }
+       
     }
+    //public List<string> historias;
+    //public List<TextMeshProUGUI> textMeshes;
 
-    void MostrarSiguienteTexto()
-    {
-        if (indiceActual < historias.Count)
-        {
-            // Desactivar el texto actual si existe y está dentro del rango
-            if (indiceActual >= 0 && indiceActual < textMeshes.Count)
-            {
-                textMeshes[indiceActual].gameObject.SetActive(false);
-            }
+    //public TextMeshProUGUI textoInteraccion;
+    //private bool mostrarTexto = false;
+    //private int indiceActual = 0;
 
-            // Incrementar el índice
-            indiceActual++;
+    //void Update()
+    //{
+    //    if (mostrarTexto && Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        MostrarSiguienteTexto();
+    //    }
+    //}
 
-            // Verificar si hay más textos para mostrar
-            if (indiceActual < historias.Count)
-            {
-                // Mostrar el siguiente texto si existe y está dentro del rango
-                if (indiceActual >= 0 && indiceActual < textMeshes.Count)
-                {
-                    textMeshes[indiceActual].gameObject.SetActive(true);
-                }
-            }
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("PJ"))
+    //    {
+    //        Debug.Log("Player cerca de la palanca");
+    //        mostrarTexto = true;
+    //        textoInteraccion.gameObject.SetActive(true);
+    //        // Mostrar el primer texto al entrar en la zona
+    //        MostrarSiguienteTexto();
+    //    }
+    //}
+
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("PJ"))
+    //    {
+    //        mostrarTexto = false;
+    //        textoInteraccion.gameObject.SetActive(false);
+    //    }
+    //}
+
+    //void MostrarSiguienteTexto()
+    //{
+    //    if (indiceActual < historias.Count)
+    //    {
+    //        // Desactivar el texto actual si existe y está dentro del rango
+    //        if (indiceActual >= 0 && indiceActual < textMeshes.Count)
+    //        {
+    //            textMeshes[indiceActual].gameObject.SetActive(false);
+    //        }
+
+    //        // Incrementar el índice
+    //        indiceActual++;
+
+    //        // Verificar si hay más textos para mostrar
+    //        if (indiceActual < historias.Count)
+    //        {
+    //            // Mostrar el siguiente texto si existe y está dentro del rango
+    //            if (indiceActual >= 0 && indiceActual < textMeshes.Count)
+    //            {
+    //                textMeshes[indiceActual].gameObject.SetActive(true);
+    //            }
+    //        }
+    //    }
+    //}
 
     //public TextMeshProUGUI textoInteraccion;
     //private bool mostrarTexto = false;

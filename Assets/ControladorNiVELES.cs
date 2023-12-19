@@ -17,7 +17,7 @@ public class ControladorNiVELES : MonoBehaviour
     void Update()
     {
         // Cambiar al siguiente nivel al presionar la tecla B
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             CambiarNivel();
         }
