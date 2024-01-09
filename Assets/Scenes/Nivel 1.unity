@@ -7426,6 +7426,8 @@ GameObject:
   - component: {fileID: 1059767335}
   - component: {fileID: 1059767334}
   - component: {fileID: 1059767336}
+  - component: {fileID: 1059767338}
+  - component: {fileID: 1059767337}
   m_Layer: 0
   m_Name: TrampaMortal (1)
   m_TagString: Untagged
@@ -7522,6 +7524,60 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1059767337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059767332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8994402f64229499214f012e63d50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "Da\xF1o": 50
+--- !u!68 &1059767338
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059767332}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.5873578, y: 0}
+  - {x: -1.4451386, y: -0.3063209}
+  - {x: -1.2573946, y: -1.1645082}
+  - {x: -0.7497004, y: -2.0224206}
+  - {x: 0.1503335, y: -2.4081576}
+  - {x: -0.37939632, y: -1.808636}
+  - {x: -0.5524176, y: -1.377231}
+  - {x: -0.2889631, y: -1.1215922}
+  - {x: 0.18184492, y: -1.4068036}
+  - {x: 0.14158851, y: -0.43024683}
+  - {x: 0.13009492, y: 0.355717}
+  - {x: 0.20092337, y: 0.7779637}
+  - {x: 0.20161775, y: 1.4269354}
+  - {x: -0.17673635, y: 1.1603569}
+  - {x: -0.50111246, y: 1.1745714}
+  - {x: -0.43411392, y: 1.6254734}
+  - {x: 0.10387102, y: 2.3290493}
+  - {x: -0.6653398, y: 1.9570435}
+  - {x: -1.1960406, y: 1.1401119}
+  - {x: -1.4183117, y: 0.3448472}
+  - {x: -1.5849853, y: -0.033534527}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1087294005
 GameObject:
   m_ObjectHideFlags: 0
@@ -14931,6 +14987,8 @@ GameObject:
   - component: {fileID: 1778003099}
   - component: {fileID: 1778003098}
   - component: {fileID: 1778003097}
+  - component: {fileID: 1778003101}
+  - component: {fileID: 1778003102}
   m_Layer: 0
   m_Name: TrampaMortal
   m_TagString: Untagged
@@ -15027,6 +15085,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -270}
+--- !u!114 &1778003101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778003096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8994402f64229499214f012e63d50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "Da\xF1o": 25
+--- !u!68 &1778003102
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778003096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.5873578, y: 0}
+  - {x: -1.4451386, y: -0.3063209}
+  - {x: -1.2573946, y: -1.1645082}
+  - {x: -0.7497004, y: -2.0224206}
+  - {x: 0.1503335, y: -2.4081576}
+  - {x: -0.37939632, y: -1.808636}
+  - {x: -0.5524176, y: -1.377231}
+  - {x: -0.2889631, y: -1.1215922}
+  - {x: 0.18184492, y: -1.4068036}
+  - {x: 0.14158851, y: -0.43024683}
+  - {x: 0.13009492, y: 0.355717}
+  - {x: 0.20092337, y: 0.7779637}
+  - {x: 0.20161775, y: 1.4269354}
+  - {x: -0.17673635, y: 1.1603569}
+  - {x: -0.50111246, y: 1.1745714}
+  - {x: -0.43411392, y: 1.6254734}
+  - {x: 0.10387102, y: 2.3290493}
+  - {x: -0.6653398, y: 1.9570435}
+  - {x: -1.1960406, y: 1.1401119}
+  - {x: -1.4183117, y: 0.3448472}
+  - {x: -1.5849853, y: -0.033534527}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &1807992108 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3778255132258598958, guid: 618b680c80de4d04f86f17068c4d0fdf, type: 3}
