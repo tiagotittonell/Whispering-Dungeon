@@ -322,8 +322,8 @@ MonoBehaviour:
   velocidadRebote: {x: 10, y: 10}
   damage_: 0
   empuje: 0
-  velocidadDeMovimiento: 400
-  suavizadoMovimiento: 0
+  velocidadDeMovimiento: 450
+  suavizadoMovimiento: 0.112
   fuerzaSalto: 550
   queEsSuelo:
     serializedVersion: 2
