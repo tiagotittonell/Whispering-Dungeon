@@ -57,24 +57,28 @@ public class ControladorPersonaje : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {//{
-             //    colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+                
                 colisionador.transform.GetComponent<COPIAENEMIGOSCRIPT>().TomarDaño(dañoGolpe);
             }
-        }
-    }
-    private void Golpe2()
-    {
-        anim.SetTrigger("Golpe");
-        Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
-        foreach (Collider2D colisionador in objetos)
-        {
-            if (colisionador.CompareTag("Enemigo"))
-            {//{
+            else if (colisionador.CompareTag("Boss"))
+            {
                 colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
-                //colisionador.transform.GetComponent<COPIAENEMIGOSCRIPT>().TomarDaño(dañoGolpe);
             }
         }
     }
+    //private void Golpe2()
+    //{
+    //    anim.SetTrigger("Golpe");
+    //    Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
+    //    foreach (Collider2D colisionador in objetos)
+    //    {
+    //        if (colisionador.CompareTag("Enemigo"))
+    //        {//{
+    //            colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+    //            colisionador.transform.GetComponent<COPIAENEMIGOSCRIPT>().TomarDaño(dañoGolpe);
+    //        }
+    //    }
+    //}
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

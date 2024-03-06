@@ -520,6 +520,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004941, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: vida
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004941, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: vidaMaxima
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 2238526510694004943, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
       propertyPath: m_Size.x
       value: 0.10863008

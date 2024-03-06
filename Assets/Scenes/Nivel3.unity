@@ -3419,9 +3419,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1797831537321813490, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797831537321813490, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513473, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_Name
       value: EnemigoBoss 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712394655599513473, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
+      propertyPath: m_TagString
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513477, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_RootOrder
