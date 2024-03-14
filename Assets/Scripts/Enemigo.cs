@@ -8,6 +8,9 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private float vida;
     [SerializeField] private BarraDeVida barraVida;
 
+    public delegate void MuerteDelegate();
+    public event MuerteDelegate OnMuerte;
+
     private Animator animator;
 
     public Rigidbody2D rb;
@@ -59,6 +62,7 @@ public class Enemigo : MonoBehaviour
 
 
         Destroy(gameObject);
+        OnMuerte?.Invoke();
     }
 
     public void MirarJugador()
