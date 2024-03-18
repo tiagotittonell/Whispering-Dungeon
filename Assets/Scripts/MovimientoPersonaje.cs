@@ -9,7 +9,6 @@ using UnityEngine.Windows;
 public class MovimientoPersonaje : MonoBehaviour
 {
 
-
     private Rigidbody2D rb;
 
     //EFECTO DAÑO
@@ -216,7 +215,7 @@ public class MovimientoPersonaje : MonoBehaviour
             SaltoPared();
         }
 
-        if (UnityEngine.Input.GetKeyDown(KeyCode.B) && puedeHacerDash)
+        if (UnityEngine.Input.GetKeyDown(KeyCode.C) && puedeHacerDash)
         {
             StartCoroutine(Dash());
         }

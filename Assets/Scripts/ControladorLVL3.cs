@@ -32,6 +32,6 @@ public class ControladorLVL3 : MonoBehaviour
 
     private void CargarEscenaVictoria()
     {
-        SceneManager.LoadScene("PantallaVictoria");
+        SceneManager.LoadScene("PantallaWin");
     }
 }

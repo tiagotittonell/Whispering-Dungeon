@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Enemigo : MonoBehaviour
 {
     [SerializeField] private float vida;
-    [SerializeField] private BarraDeVida barraVida;
+    [SerializeField] private BarraDeVidaBoss barraVida;
+    [SerializeField] private float vidaMaxima;
 
     public delegate void MuerteDelegate();
     public event MuerteDelegate OnMuerte;
@@ -30,39 +31,50 @@ public class Enemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        vida = vidaMaxima;
+        barraVida.InicializarBarraDeVida(vida);
+
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        //barraVida.InicializarBarraDeVida(vida);
+
         jugador = GameObject.FindGameObjectWithTag("PJ").GetComponent<Transform>();
     }
     private void Update()
     {
-        float distanciaJugador = Vector2.Distance(transform.position, jugador.position);
-        animator.SetFloat("DistanciaJugador", distanciaJugador);
+        
+            float distanciaJugador = Vector2.Distance(transform.position, jugador.position);
+            animator.SetFloat("DistanciaJugador", distanciaJugador);
+        
     }
-    // Update is called once per frame
-    public void TomarDaño(float daño)
+        // Update is called once per frame
+        
+    public void TomarDañoEnemigo(float daño)
     {
         vida -= daño;
 
-        //barraVida.CambiarVidaActual(vida);
+        barraVida.CambiarVidaActual(vida);
+        Muerte();
 
-        if (vida <= 0)
+        //if (vida <= 0)
 
-        {
-            animator.SetTrigger("Muerte");
+        //{
+        //    animator.SetTrigger("Muerte");
 
-            //Destroy(gameObject);
+        //    Destroy(gameObject);
 
-        }
+        //}
 
     }
     private void Muerte()
     {
+        if (vida <= 0)
+        {
+            //animator.SetTrigger("Muerte");
 
-
-        Destroy(gameObject);
-        OnMuerte?.Invoke();
+            Destroy(gameObject);
+            OnMuerte?.Invoke();
+        }
     }
 
     public void MirarJugador()
@@ -82,7 +94,7 @@ public class Enemigo : MonoBehaviour
         {
             if (colision.CompareTag("PJ"))
             {
-                colision.GetComponent<VidaPersonaje>().TomarDaño(dañoAtaque);
+                colision.GetComponent<VidaPersonaje>().TomarDañoBarra(dañoAtaque);
             }
         }
     }

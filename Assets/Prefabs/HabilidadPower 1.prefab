@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2788142969d72074d98d85d0813d68de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "da\xF1o": 50
+  "da\xF1o": 20
   dimensionCaja: {x: 1.39, y: 4.98}
   posicionCaja: {fileID: 3790601985147328837}
   tiempoVida: 1.5

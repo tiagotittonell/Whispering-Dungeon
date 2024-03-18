@@ -50,7 +50,7 @@ public class VidaPersonaje : MonoBehaviour
         animator.SetTrigger("Golpe");
         //Jugador pierde el Control del personaje
         StartCoroutine(PerderControl());
-        movimientoJugador.Rebote(posicion);
+        //movimientoJugador.Rebote(posicion);
     }
 
     private IEnumerator PerderControl()

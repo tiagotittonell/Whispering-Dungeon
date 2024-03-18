@@ -26,7 +26,7 @@ public class HabilidadEnemigo : MonoBehaviour
         {
             if (colisiones.CompareTag("PJ"))
             {
-                colisiones.GetComponent<VidaPersonaje>().TomarDaño(daño);
+                colisiones.GetComponent<VidaPersonaje>().TomarDañoBarra(daño);
             }
         }
     }

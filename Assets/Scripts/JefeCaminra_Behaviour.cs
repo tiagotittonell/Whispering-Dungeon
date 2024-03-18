@@ -8,7 +8,7 @@ public class JefeCaminra_Behaviour : StateMachineBehaviour
 
     private Rigidbody2D rb;
 
-    [SerializeField]   private float velocidadMovimiento;
+    [SerializeField] private float velocidadMovimiento;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -20,7 +20,8 @@ public class JefeCaminra_Behaviour : StateMachineBehaviour
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {rb.velocity = new Vector2(velocidadMovimiento, rb.velocity.y)*animator.transform.right;
+    {
+        rb.velocity = new Vector2(velocidadMovimiento, rb.velocity.y) * animator.transform.right;
 
     }
 

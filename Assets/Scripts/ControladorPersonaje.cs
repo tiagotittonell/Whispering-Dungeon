@@ -62,7 +62,7 @@ public class ControladorPersonaje : MonoBehaviour
             }
             else if (colisionador.CompareTag("Boss"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+                colisionador.transform.GetComponent<Enemigo>().TomarDañoEnemigo(dañoGolpe);
             }
         }
     }

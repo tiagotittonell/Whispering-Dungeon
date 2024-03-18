@@ -324,7 +324,7 @@ MonoBehaviour:
   empuje: 0
   velocidadDeMovimiento: 450
   suavizadoMovimiento: 0.112
-  fuerzaSalto: 550
+  fuerzaSalto: 600
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 8
