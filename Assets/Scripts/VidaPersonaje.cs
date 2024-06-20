@@ -21,15 +21,15 @@ public class VidaPersonaje : MonoBehaviour
         movimientoJugador = GetComponent<MovimientoPersonaje>();
         animator = GetComponent<Animator>();
     }
-    public void TomarDaño(float daño)
-    {
-        vida -= daño;
+    //public void TomarDaño(float daño)
+    //{
+    //    vida -= daño;
 
 
 
 
 
-    }
+    //}
     public void TomarDañoBarra(float Daño)
     {
         vida -= Daño;

@@ -54,27 +54,23 @@ public class Enemigo : MonoBehaviour
         vida -= daño;
 
         barraVida.CambiarVidaActual(vida);
-        Muerte();
-
-        //if (vida <= 0)
-
-        //{
-        //    animator.SetTrigger("Muerte");
-
-        //    Destroy(gameObject);
-
-        //}
+        if (vida <= 0)
+        {
+           
+            animator.SetTrigger("Muerte");
+            //Muerte();
+        }
 
     }
     private void Muerte()
     {
-        if (vida <= 0)
-        {
-            //animator.SetTrigger("Muerte");
+        //if (vida <= 0)
+        //{
+        //    //animator.SetTrigger("Muerte");
 
-            Destroy(gameObject);
-            OnMuerte?.Invoke();
-        }
+        Destroy(gameObject);
+        OnMuerte?.Invoke();
+        //}
     }
 
     public void MirarJugador()
