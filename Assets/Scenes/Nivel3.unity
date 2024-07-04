@@ -4247,6 +4247,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004916, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: fuerzaSalto
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2238526510694004918, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4294,6 +4298,22 @@ PrefabInstance:
     - target: {fileID: 2238526510694004920, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
       propertyPath: m_Name
       value: PJ
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004941, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: vida
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004941, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: vidaMaxima
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004941, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: fuerzaEmpuje
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004941, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: tiempoPerdidaControl
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4266101463427528829, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
       propertyPath: m_IsActive

@@ -5235,6 +5235,10 @@ PrefabInstance:
       value: -0.2155
       objectReference: {fileID: 0}
     - target: {fileID: 5499722393679085697, guid: 39b90712b254f9e40b1128423ea75981, type: 3}
+      propertyPath: fuerzaSalto
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499722393679085697, guid: 39b90712b254f9e40b1128423ea75981, type: 3}
       propertyPath: velocidadDash
       value: 3
       objectReference: {fileID: 0}

@@ -324,19 +324,18 @@ MonoBehaviour:
   empuje: 0
   velocidadDeMovimiento: 450
   suavizadoMovimiento: 0.112
-  fuerzaSalto: 600
+  fuerzaSalto: 0.0001
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 8
   controladorSuelo: {fileID: 2238526509726506942}
-  dimensionCaja: {x: 0.72, y: 0.15, z: 0}
-  enSuelo: 0
+  dimensionCaja: {x: 0.72, y: 0.15}
   velocidadDash: 6
   tiempoDash: 0.4
   sePuedeMover: 1
   trailRender: {fileID: 2238526510645602610}
   controladorPared: {fileID: 2238526511250258774}
-  dimensionCajaPared: {x: 0.37, y: 2.68, z: -0.01}
+  dimensionCajaPared: {x: 0.37, y: 2.68}
   velocidadDeslizar: 1
   fuerzaSaltoParedX: 6
   fuerzaSaltoParedY: 12

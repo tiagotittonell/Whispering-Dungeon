@@ -20,12 +20,12 @@ public class ObjectDamage : MonoBehaviour
     //        }
     //    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.CompareTag("PJ"))
-        {
-            collision.transform.GetComponent<VidaPersonaje>().TomarDañoBarra(25);
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.transform.CompareTag("PJ"))
+    //    {
+    //        collision.transform.GetComponent<VidaPersonaje>().TomarDañoBarra(25);
            
-        }
-    }
+    //    }
+    //}
 }
