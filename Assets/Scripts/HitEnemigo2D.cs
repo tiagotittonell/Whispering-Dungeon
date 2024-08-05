@@ -19,7 +19,7 @@ public class HitEnemigo2D : MonoBehaviour
             if (vidaPersonaje != null)
             {
                 // Aplicar daño al jugador
-                //vidaPersonaje.TomarDaño(Daño, transform.forward);
+                //vidaPersonaje.TomarDañoBarra(Daño, transform.forward);
                 vidaPersonaje.TomarDañoBarra(Daño);
             }
         }

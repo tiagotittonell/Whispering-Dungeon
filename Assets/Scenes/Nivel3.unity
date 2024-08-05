@@ -3711,19 +3711,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513477, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 12
+      value: 14.354792
       objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513477, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 12
+      value: 12.721197
       objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513477, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.4
+      value: -10.2559
       objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513477, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -67.4
+      value: -67.222
       objectReference: {fileID: 0}
     - target: {fileID: 3712394655599513477, guid: 0b33738f58425be4ab0d7da90f4f149e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4250,6 +4250,10 @@ PrefabInstance:
     - target: {fileID: 2238526510694004916, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
       propertyPath: fuerzaSalto
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238526510694004916, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
+      propertyPath: velocidadDeMovimiento
+      value: 440
       objectReference: {fileID: 0}
     - target: {fileID: 2238526510694004918, guid: 3126a0fc22625c94484549c6b70169b2, type: 3}
       propertyPath: m_RootOrder
